@@ -11,17 +11,17 @@ public class User {
     private String email;
     private String role; // customer, admin, stylist
 
-    // constructor
+    //constructor
     public User(String user, String pass, String n, String mail, String r) {
         accountNumber = nextAccountNumber++;
-        username = username;
-        password = password;
-        name = name;
-        email = email;
-        role = role;
+        username = user;
+        password = pass;
+        name = n;
+        email = mail;
+        role = r;
     }
 
-    // getters
+    //getters
     public int getAccountNumber() {
         return accountNumber;
     }
@@ -46,7 +46,7 @@ public class User {
         return role;
     }
 
-    // setters
+    //setters
     public void setUsername(String user) {
         username = user;
     }
